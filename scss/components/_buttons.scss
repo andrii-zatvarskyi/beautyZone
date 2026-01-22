@@ -1,0 +1,15 @@
+.button {
+  max-width: 310px;
+  padding: 16px 32px;
+  border-radius: 32px;
+  background-color: var(--primary-blue-color);
+  border: 2px solid;
+  border-color: var(--primary-blue-color);
+  color: var(--primary-white-color);
+  font-weight: 700;
+}
+
+.button:hover {
+  background-color: var(--primary-white-color);
+  color: var(--primary-dark-blue-color);
+}

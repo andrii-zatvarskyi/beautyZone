@@ -1,0 +1,144 @@
+.backdrop {
+  position: fixed;
+  inset: 0;
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(1, 31, 74, 0.4);
+  z-index: 10;
+  transition: opacity 0.25s ease, visibility 0.25s ease;
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal {
+  position: relative;
+  width: 100%;
+  max-width: 720px;
+  height: 100%;
+  max-height: 680px;
+  height: auto;
+  padding: 40px 0;
+  box-sizing: border-box;
+
+  background-color: var(--primary-dark-blue-color);
+  background-image: url(../img/bg-order-data.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  border-radius: 48px;
+  color: var(--primary-white-color);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+}
+
+.modal-button-close {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  background: none;
+  border: none;
+  font-size: 32px;
+  color: var(--primary-white-color);
+  cursor: pointer;
+}
+
+.modal-font {
+  width: 100%;
+  max-width: 430px;
+  text-align: center;
+}
+
+.modal-title {
+  font-size: 64px;
+  margin: 0 0 40px 0;
+  font-weight: 700;
+}
+
+.modal-subtitle {
+  font-size: 22px;
+  margin: 0 0 32px 0;
+  font-weight: 600;
+}
+
+.modal-subtitle span {
+  color: var(--primary-blue-color);
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.modal-form-info {
+  max-width: 310px;
+  height: 52px;
+  padding: 18px 32px;
+  border: 2px solid var(--primary-gray-graphite-color);
+  border-radius: 32px;
+  background: transparent;
+  color: var(--primary-white-color);
+}
+
+.modal-form-info:focus {
+  color: var(--primary-white-color);
+  background-color: var(--primary-gray-graphite-color);
+  outline: none;
+}
+
+.modal-form-info::placeholder {
+  color: var(--primary-white-color);
+  opacity: 1;
+}
+
+.modal-politic {
+  font-size: 13px;
+  color: var(--primary-gray-graphite-color);
+  margin-top: -16px;
+}
+
+.modal-politic span {
+  text-decoration: underline;
+}
+
+@media (max-height: 488px) {
+  .modal {
+    position: static;
+    max-height: 450px;
+    padding: 50px 0;
+  }
+
+  .modal-form {
+    gap: 10px;
+  }
+
+  .modal-title {
+    font-size: 30px;
+    margin: 0px 0 11px 0;
+  }
+
+  .modal-subtitle {
+    font-size: 18px;
+    margin: 0 0 15px 0;
+  }
+
+  .modal-politic {
+    margin-top: 2px;
+  }
+
+  .modal-button-close {
+    top: 30px;
+    right: 30px;
+  }
+}

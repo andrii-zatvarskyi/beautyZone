@@ -1,0 +1,46 @@
+
+
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 16px;
+
+}
+@import "./util/font";
+@import "./util/variables";
+@import "./util/base";
+@import "./util/util";
+
+
+
+@import "./components/buttons";
+@import "./components/beauty-section";
+@import "./components/choice-section";
+@import "./components/footer-section";
+@import "./components/header";
+@import "./components/how-to-find";
+@import "./components/logo-section";
+@import "./components/modal";
+@import "./components/mobile__menu";
+@import "./components/procedures-section";
+@import "./components/title";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
